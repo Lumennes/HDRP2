@@ -16,7 +16,7 @@ namespace NaughtyCharacter
 		private void LateUpdate() 
 		{
 			SetPosition(Target.transform.position);
-			Vector2 CameraInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+			Vector2 CameraInput = new(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 			UpdateControlRotation();
 			
 			// Adjust the pitch angle (X Rotation)
