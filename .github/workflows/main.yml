@@ -89,7 +89,7 @@ jobs:
       - name: Upload 
         uses: Difegue/action-megacmd@master
         with:
-          args: put -c build /exportedstuff/
+          args: put -c build /exportedstuff/${{ matrix.projectName }}/
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
